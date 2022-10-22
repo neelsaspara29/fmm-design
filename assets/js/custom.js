@@ -55,4 +55,35 @@ $(document).ready(function(){
         }
       });
 
+      var blogSlider = new Swiper(".blog-slider-section", {
+        slidesPerView: 2.3,
+        grabCursor: true,
+        spaceBetween: 103,
+        // loop: true,
+        // autoplay: {
+        //   delay: 4000
+        // },
+        breakpoints: {
+          200: {
+            slidesPerView: 1.3,
+            spaceBetween: 30,
+          },
+          600: {
+            slidesPerView: 2.5,
+            spaceBetween: 30,
+          },
+          768: {
+            slidesPerView: 1.5,
+            spaceBetween: 30,
+          },
+          850: {
+            slidesPerView: 2.3,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 2.3
+          }
+        }
+      });
+
 });

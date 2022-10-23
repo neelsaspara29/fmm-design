@@ -42,6 +42,7 @@ button, .button-primary {
     font-size: 24px;
     line-height: 29px;
     color: #FFFFFF;
+    border: none;
 }
 
 a {
@@ -1178,3 +1179,842 @@ body.opened-drawer {
 }
 
 /* End footer.css */
+
+
+/* Dashboard-login.css */
+.banner-section {
+    position: relative;
+    background-image: url('../images/login-banner.png');
+    height: 545px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.banner-section .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.banner-section .banner-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    margin-bottom: 12px;
+}
+
+.banner-section .description {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.login-tab-section ul {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #A6A6A6;
+    margin-bottom: 55px;
+    list-style: none;
+    position: relative;
+}
+
+.login-tab-section ul:after {
+    position: absolute;
+    content: '';
+    left: 10px;
+    top: 20px;
+    right: 10px;
+    width: 98%;
+    border: 4px dashed #E0E0E0;
+    z-index: -2;
+}
+
+.login-tab-section ul li span.number {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    margin: 0px auto 24px;
+    border: 1px double #E0E0E0;
+    background: #E0E0E0;
+}
+
+.login-tab-section .tab-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: #E0E0E0;
+}
+
+.login-tab-section .active .tab-title {
+    color: #424242;
+}
+
+.login-tab-section ul li.active span.number {
+    border: 1px double #FF385C;
+    background: #FF385C;
+    position: relative;
+}
+
+label {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+.main-login-section .header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+input, select {
+    height: 54px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 32px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.login-form-section .contact-number {
+    position: relative;
+}
+
+select { 
+    background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 19px) calc(1em + 9px), calc(100% - 15px) calc(1em + 9px), calc(100% - 2.5em) 0.5em;
+    background-size: 7px 5px, 5px 5px, 0px 1.5em;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.login-form-section .contact-number input {
+    padding-left: 50px;
+}
+
+.login-form-section .contact-number svg {
+    position: absolute;
+    left: 10px;
+    top: 48px;
+}
+
+.login-form-section .contact-number input::placeholder { 
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.login-form-section select { 
+    color: #FF385C;
+}
+
+.login-form-section select option { 
+    color: #1A1A1A;
+}
+
+/* select option:checked, select option:hover { 
+    background: #FF385C;
+    color: #fff;
+} */
+
+.login-form-section .contact-number span {
+    position: absolute;
+    right: 10px;
+    top: 53px;
+    color: #00C853;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 14px;
+}
+
+.login-form-section textarea {
+    padding: 14px 16px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.login-form-section .two-field {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.login-form-section .two-field .input-field:first-child {
+    width: 70%;
+}
+
+.login-form-section .two-field .input-field:last-child {
+    width: 25%;
+}
+
+.login-form-section .two-field .input-field:last-child label {
+    display: none;
+}
+
+.login-tab-section ul li span.number::after {
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    border-radius: 100%;
+    content: '';
+    border: 1px double #E0E0E0;
+    z-index: -1;
+    background: #fff;
+}
+
+.main-login-section ul li.active span.number::after {
+    border: 1px double #FF385C;
+}
+
+.main-login-section .login-button {
+    width: 100%;
+    text-align: right;
+}
+
+.next-button {
+    background: #FF385C;
+    border-radius: 8px;
+    width: 268px;
+    height: 54px;
+    outline: none;
+    border: none;
+    margin-top: 78px;
+    margin-bottom: 60px;
+}
+
+.main-login-section .col-6:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;        
+}
+
+:focus-visible {
+    outline-color: #FF385C;
+}
+
+.image-model {
+    position: relative;
+}
+
+.image-model {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    outline: 0;
+    display: block;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.image-model .image-model-wrapper {
+    display: block;
+    z-index: 999;
+    background: #fff;
+    margin: 30px auto;
+    position: static;
+    width: auto;
+    max-width: 679px;
+    min-width: 679px;
+    min-height: 500px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    max-height: calc(100vh - 48px);
+    padding-bottom: 24px;
+    padding: 20px;
+}
+
+.image-model.opened {
+    opacity: 1;
+    visibility: visible;
+}
+
+.image-model .upload-button {
+    background: #FF385C;
+    border-radius: 10px;
+    width: 100%;
+    height: 54px;
+    border: none;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.image-model:before {
+    content: "";
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
+.image-model .model-center {
+    margin: auto;
+    text-align: center;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.image-model .model-center .text { 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #929292;
+    margin-top: 20px;
+}
+
+.upload-image, .close-model {
+    cursor: pointer;
+}
+
+.image-model .model-center .text span {
+ color: #FF385C;
+ display: block;
+}
+
+.image-model.opened:before {
+    display: block;
+}
+
+.image-model-wrapper h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.image-model-wrapper .model-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.map-section .serch-bar {
+   position: relative;
+}
+
+.map-section .location-search-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.search-box-input {
+    padding-left: 50px;
+}
+
+.address-section .search-box-input {
+    margin-bottom: 26px;
+}
+
+.address-section .location svg {
+ margin-right: 10px;
+}
+
+.address-section span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+}
+
+.address-section .location {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding-left: 18px;
+}
+
+.address-section .map-section h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 54px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 991px) {  
+    .banner-section {
+        height: 500px;
+    }
+    .banner-section .banner-title {
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .banner-section .description {
+        font-size: 18px;
+        line-height: 26px;
+    }
+     label {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .login-form-section .two-field .input-field:first-child,
+    .login-form-section .two-field .input-field:last-child {
+        width: 100%;
+    }
+    .login-form-section .two-field {
+        flex-wrap: wrap;
+    }
+
+    .login-form-section .two-field .input-field:first-child input {
+        margin-bottom: 18px;
+    }
+
+    .next-button {
+        margin-top: 30px;
+    }
+
+    .login-form-section .contact-number svg {
+        top: 42px;
+    }
+
+    .login-form-section .contact-number span {
+        top: 46px;
+    }
+
+    .image-model .image-model-wrapper {
+        width: auto;
+        max-width: 679px;
+        min-width: 500px;
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) { 
+    .login-tab-section .tab-title {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0px 5px;
+    }
+    .next-button {
+        width: 200px;
+        height: 48px;
+    }
+    .login-tab-section ul li span.number {
+        width: 36px;
+        height: 36px;
+    }
+    .login-tab-section ul li span.number::after {
+        width: 42px;
+        height: 42px;
+    }
+    .login-tab-section ul:after {
+        position: absolute;
+        content: '';
+        left: 10px;
+        top: 24px;
+        right: 10px;
+        width: 96%;
+        border: 2px dashed #E0E0E0;
+        z-index: -2;
+    }
+    input, select {
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .image-model .image-model-wrapper {
+        width: auto;
+        max-width: 679px;
+        min-width: 300px;
+        min-height: 400px;
+    }
+}
+/* End Dashboard-login.css */
+
+/* adress.css */
+.address-section .map-section {
+    margin-right: 39px;
+}
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.back-button {
+    background: rgba(196, 196, 196, 0.2);
+    color: #000;
+}
+@media only screen and (max-width: 991px) {  
+    .address-section .map-section h2 {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 768px) {  
+    .address-section .map-section {
+        margin-right: 0px;
+    }
+    .address-section .map-section {
+        margin-bottom: 40px;
+    }
+    .search-box-input {
+        padding-left: 38px;
+    }
+    .map-section .location-search-icon {
+        left: 13px;
+    }
+    .address-section .search-box-input {
+        font-size: 12px;
+        padding-left: 30px;
+    }
+    .address-section .map-section h2 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .map-section .location-search-icon {
+        left: 8px;
+    }
+    .address-section .location {
+        padding-left: 5px;
+        font-size: 12px;
+    }
+    .address-section .location svg {
+        margin-right: 4px;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    .button-section {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .button-section .back-button {
+        margin-bottom: 14px !important;
+    }
+    .button-section .next-button {
+        margin: 0px;
+        width: 100%;
+    }
+    .back-button {
+        margin-bottom: 16px;
+    }
+}
+/* End adress.css */
+
+/* presaging.css */
+
+.presaging-title {
+    text-align: left;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.87);
+    margin-bottom: 34px;
+}
+
+.main-presaging-section .image-section {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-top: 40px;
+}
+
+.main-presaging-section .input-field-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.main-presaging-section .input-field-checkbox input {
+    margin: 0px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #FF385C;
+    border-radius: 4px;
+}
+
+.main-presaging-section .input-field-checkbox label {
+    margin: 0px;
+}
+
+.input-field-checkbox.checkbox-input label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-field-checkbox.checkbox-input {
+    line-height: 22px;
+    padding: 16px;
+    background: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 32px;
+}
+
+.input-field-checkbox.checkbox-input input[type=checkbox]:checked + label:before, 
+.input-field-checkbox.checkbox-input input[type=checkbox] + label:before {
+    display: none;
+}
+
+.input-field-checkbox.checkbox-input input[type=checkbox] + label:after {
+    content: "";
+    border: 1px solid #FF385C;
+    border-radius: 0.2em;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding-left: 4px;
+    margin-right: 10px;
+    vertical-align: top;
+    transition: .2s;
+    font-size: 12px;
+    align-items: center;
+    padding-top: 1px;
+}
+
+.input-field-checkbox.checkbox-input input[type=checkbox]:checked + label:after {
+    background-color: #FF385C;
+    border-color: #FF385C;
+    color: #fff;
+    content: "\2714";
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: #FF385C;
+    border-color: #FF385C;
+    color: #fff;
+    content: "\2714";
+}
+
+input[type=checkbox] + label:before {
+    content: "";
+    border: 1px solid #FF385C;
+    border-radius: 0.2em;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding-left: 4px;
+    margin-right: 10px;
+    vertical-align: top;
+    transition: .2s;
+    font-size: 12px;
+    align-items: center;
+    padding-top: 1px;
+}
+
+.presaging-form-section .field-button {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 32px;
+    justify-content: space-between;
+}
+
+.presaging-form-section .field-button .input-field {
+    width: 70%;
+}
+
+.presaging-form-section .field-button .input-field input {
+    margin-bottom: 0px;
+}
+
+.presaging-form-section .field-button .upload {
+    width: 182px;
+    height: 54px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.presaging-form-section .main-presaging-section .image-section {
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 768px) {  
+    .main-presaging-section .image-section {
+        justify-content: center;
+    }
+    .presaging-form-section .field-button .upload { 
+        font-size: 18px;
+    }
+}
+
+/* End presaging.css */
+
+/* services-section.css */
+.services-section {
+    position: relative;
+    margin-bottom: 44px;
+    overflow: hidden;
+}
+
+.services-section .services-items {
+    width: calc(276px - 27px);
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #BDBDBD;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 0px 27px 26px;
+}
+
+.services-section label {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FF385C;
+}
+
+.services-section h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 51px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.87);
+    text-align: left;
+    margin-bottom: 34px;
+}
+
+.services-section .sub-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #212121;
+    margin-bottom: 11px;
+}
+
+.services-section .row {
+    margin: 0px -27px;
+}
+
+@media only screen and (max-width: 991px) {  
+    .services-section .row {
+        margin: 0px -20px;
+    } 
+    .services-section .services-items {
+        width: calc(33.33% - 40px);
+        margin: 0px 20px 26px;
+    }
+}
+
+@media only screen and (max-width: 768px) {  
+    .services-section .row {
+        margin: 0px -15px;
+    } 
+    .services-section .services-items {
+        width: calc(50% - 30px);
+        margin: 0px 15px 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {  
+    .services-section .row {
+        margin: 0px -15px;
+    } 
+    .services-section .services-items {
+        width: calc(100% - 30px);
+        margin: 0px 15px 20px;
+    }
+}
+/* End services-section.css */

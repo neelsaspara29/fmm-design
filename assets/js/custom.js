@@ -12,6 +12,16 @@ $(document).ready(function(){
         $('.menu-overlay').removeClass('overlay-active');
     });
 
+    $(document).on('click', '.upload-image', function() {
+      $('.image-model').toggleClass('opened');
+      $('body').toggleClass('opened-drawer');
+    });
+
+    $(document).on('click', '.close-model', function() {
+      $('.image-model').removeClass('opened');
+      $('body').removeClass('opened-drawer');
+  });
+
     var heroSlider = new Swiper(".main-hero-slider", {
         loop: true,
         autoplay: {

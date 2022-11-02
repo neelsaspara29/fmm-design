@@ -96,4 +96,23 @@ $(document).ready(function(){
         }
       });
 
+      function resizeFun() {
+        $('.answer-wrapper').each(function(index) {
+          var contentHeight = $(this).innerHeight();
+          $(this).parent('.bottom-wrapper').css('height', contentHeight)
+        });
+      }
+      resizeFun();
+
+      $(window).resize(function() {
+        resizeFun();
+      });
+
+      $(document).on('click', '.top-wrapper', function() {
+        if (!$(this).parent().hasClass('top-click')) {
+          resizeFun();
+        }
+        $(this).parent().toggleClass('top-click').parents().siblings().children().removeClass('top-click');
+      });
+
 });

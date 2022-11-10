@@ -459,14 +459,14 @@ body.opened-drawer {
     padding-bottom: 74px;
     background: #F5F5F5;
 }
- .artists-section h2 {
+ .artists-section h2, .explore-artists-section h2 {
     text-align: left;
     margin-bottom: 54px;
     display: flex;
     justify-content: space-between;
     align-items: center;
  }
- .artists-section h2 a {
+ .artists-section h2 a, .explore-artists-section h2 a {
     color: #DD6E8B;
     font-family: 'Poppins';
     font-weight: 400;
@@ -474,20 +474,20 @@ body.opened-drawer {
     line-height: 24px;
     letter-spacing: 1px;
  }
- .artists-section .image-section {
+ .artists-section .image-section, .explore-artists-section .image-section {
     position: relative;
  }
- .artists-section .images {
+ .artists-section .images, .explore-artists-section .images {
     position: relative;
     padding-bottom: 79%;
     display: block;
  }
- .artists-section  .slide-wrapper {
+ .artists-section  .slide-wrapper, .explore-artists-section .slide-wrapper {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
     border-radius: 8px;
  }
- .artists-section .images img {
+ .artists-section .images img, .explore-artists-section .images img {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -498,17 +498,17 @@ body.opened-drawer {
     object-fit: cover;
     border-radius: 8px 8px 0px 0px;
  }
- .artists-section .slider-item {
+ .artists-section .slider-item, .explore-artists-section .slider-item {
     padding: 10px 27px;
  }
 
- .artists-section .image-section .heart {
+ .artists-section .image-section .heart, .explore-artists-section .image-section .heart {
     position: absolute;
     right: 15px;
     bottom: 15px;
  }
 
- .artists-section .reviews {
+ .artists-section .reviews, .explore-artists-section .reviews {
     position: absolute;
     width: 36px;
     height: 18px;
@@ -526,15 +526,15 @@ body.opened-drawer {
     justify-content: center;
  }
 
- .artists-section .reviews svg {
+ .artists-section .reviews svg, .explore-artists-section .reviews svg {
     margin-left: 4px;
  }
 
- .artists-section .content-section {
+ .artists-section .content-section, .explore-artists-section .content-section {
     padding: 14px 9px 0px;
  }
 
- .artists-section .title {
+ .artists-section .title, .explore-artists-section .title {
     letter-spacing: 0.137195px;
     color: rgba(33, 33, 33, 0.87);
     font-family: 'Poppins';
@@ -546,11 +546,11 @@ body.opened-drawer {
     align-items: center;
  }
 
- .artists-section .title svg {
+ .artists-section .title svg, .explore-artists-section .title svg {
     margin-left: 10px;
  }
 
- .artists-section .location {
+ .artists-section .location, .explore-artists-section .location {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
@@ -561,11 +561,11 @@ body.opened-drawer {
     margin-bottom: 8px;
  }
 
- .artists-section .location-section, .artists-section .location svg {
+ .artists-section .location-section, .artists-section .location svg, .explore-artists-section .location-section, .explore-artists-section .location svg {
   margin-right: 8px;
  }
 
- .artists-section .tag span {
+ .artists-section .tag span, .explore-artists-section .tag span {
     background: linear-gradient(360deg, rgba(66, 165, 245, 0.3) 0%, rgba(66, 165, 245, 0) 91.18%);
     border-radius: 8px;
     font-family: 'Open Sans';
@@ -577,23 +577,23 @@ body.opened-drawer {
     margin: 0px 4px 4px;
  }
 
- .artists-section .tag span:nth-child(2) {
+ .artists-section .tag span:nth-child(2), .explore-artists-section .tag span:nth-child(2) {
     background: linear-gradient(360deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 215, 0, 0) 100%);
  }
 
- .artists-section .tag span:nth-child(3) {
+ .artists-section .tag span:nth-child(3), .explore-artists-section .tag span:nth-child(3) {
     background: linear-gradient(360deg, rgba(121, 85, 72, 0.3) 0%, rgba(121, 85, 72, 0) 100%);
  }
 
- .artists-section .tag span:nth-child(4) {
+ .artists-section .tag span:nth-child(4), .explore-artists-section .tag span:nth-child(4) {
     background: linear-gradient(0deg, rgba(91, 164, 85, 0.3) 0%, rgba(91, 164, 85, 0) 94.12%);
  }
 
- .artists-section .tag span:nth-child(5) {
+ .artists-section .tag span:nth-child(5), .explore-artists-section .tag span:nth-child(5) {
     background: linear-gradient(0deg, rgba(165, 56, 96, 0.3) 0%, rgba(165, 56, 96, 0) 94.12%);
  }
 
- .artists-section .services-text {
+ .artists-section .services-text, .explore-artists-section .services-text {
     background: #212121;
     border-radius: 0px 0px 8px 8px;
     font-family: 'Montserrat';
@@ -649,7 +649,7 @@ body.opened-drawer {
  }
 
  @media only screen and (max-width: 1200px) { 
-    .artists-section .slider-item {
+    .artists-section .slider-item, .explore-artists-section .slider-item {
         padding: 10px 15px;
     }
  }
@@ -657,14 +657,14 @@ body.opened-drawer {
     .artists-section-inner {
         padding: 0px 20px;
     }
-    .artists-section h2 {
+    .artists-section h2, .explore-artists-section h2 {
         margin-bottom: 30px;
     }
     .main-artists-slider {
         position: static;
         padding-bottom: 40px;
     }
-    .artists-section {
+    .artists-section, .explore-artists-section {
        padding: 40px 0px;
     }
  }
@@ -2044,6 +2044,93 @@ input[type=checkbox] + label:before {
     margin: 0px -27px;
 }
 
+.services-offer-inner {
+    display: flex;
+    margin-top: -1px;
+    border: 1px solid #ff385c;
+    border-radius: 8px;
+}
+
+.services-offer-inner .services-left-section {
+    width: 30%;
+    border-right: 1px solid #ff385c;
+}
+
+.services-offer-inner .services-right-section {
+    width: 70%;
+}
+
+.services-offer-inner .services-right-section .services-right-inner {
+    column-count: 2;
+    padding: 0px 20px 20px;
+}
+
+.services-offer-inner label {
+    justify-content: inherit;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.services-left-section .content-section {
+    padding: 0px 20px 20px;
+    overflow-y: auto;
+    height: 320px;
+    margin-right: 10px;
+}
+
+.services-left-section .content-section::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .services-left-section .content-section::-webkit-scrollbar-track {
+    background: rgba(229, 209, 191, 0.3);
+    border-radius: 20px;
+  }
+  
+  /* Handle */
+  .services-left-section .content-section::-webkit-scrollbar-thumb {
+    background: #202738;
+    border-radius: 20px;
+  }
+
+.services-offer-inner input[type=checkbox] + label:before {
+    margin-right: 20px;
+    border: 1px solid #9E9E9E;
+}
+
+.services-offer-inner input[type=checkbox]:checked + label:before {
+    border: 1px solid #FF385C;
+}
+
+.services-offer-inner .services-header {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    background: #FF385C;
+    border-radius: 8px 8px 0px 0px;
+    padding: 16px 0px 16px 41px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.services-left-section h2 {
+    border-radius: 8px 0px 0px 0px !important;
+}
+
+.services-right-section h2 {
+    border-radius: 0px 8px 0px 0px !important;
+}
+
 @media only screen and (max-width: 991px) {  
     .services-section .row {
         margin: 0px -20px;
@@ -2062,15 +2149,51 @@ input[type=checkbox] + label:before {
         width: calc(50% - 30px);
         margin: 0px 15px 20px;
     }
+    .services-offer-inner .services-left-section,
+    .services-offer-inner .services-right-section {
+        width: 50%;
+    }
+    .services-section {
+        margin-bottom: 20px;
+    }
+
+    .services-offer-inner .services-right-section .services-right-inner {
+        column-count: 1;
+    }
 }
 
 @media only screen and (max-width: 600px) {  
+    .services-offer-inner {
+        margin-bottom: 30px;
+    }
     .services-section .row {
         margin: 0px -15px;
     } 
     .services-section .services-items {
         width: calc(100% - 30px);
         margin: 0px 15px 20px;
+    } 
+    .services-left-section .content-section {
+        padding: 0px 10px 20px;
+        margin-right: 5px;
+    }
+    .services-offer-inner input[type=checkbox] + label:before {
+        margin-right: 10px;
+    }
+    .services-offer-inner .services-right-section .services-right-inner {
+        padding: 0px 10px 20px;
+    }
+    .services-offer-inner label {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+    }
+    .login-tab-section ul {
+        margin-bottom: 30px;
+    }
+    .services-section h2 {
+        font-size: 30px;
+        line-height: 30px;
     }
 }
 /* End services-section.css */
@@ -2949,5 +3072,782 @@ input[type=checkbox] + label:before {
     background: url('../images/membership-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
+    display: inline-block;
+    width: 100%;
+    color: #ffffff;
+}
+
+.membership-section .breadcrumb {
+    margin-top: 130px;
+} 
+
+.membership-section .breadcrumb li + li::before {
+    border-right: 1px solid #ffffff;
+}
+
+.membership-section .breadcrumb ul a.active {
+    color: #ffffff;
+}
+
+.main-membership-section h2 {
+    font-family: 'Praysire';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+}
+
+.membership-section .membership-top-section {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 50px 0px 135px;
+    position: relative;
+}
+
+.main-membership-top-section {
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+
+.membership-tab-section {
+    text-align: center;
+}
+
+.membership-section .main-membership-top-section::before {
+    position: absolute;
+    content: '';
+    background: url(../images/plan-img-1.png);
+    left: -70px;
+    top: 22px;
+    right: auto;
+    height: 194px;
+    width: 400px;
+    background-repeat: no-repeat;
+}
+
+.membership-section .main-membership-top-section::after {
+    position: absolute;
+    content: '';
+    background: url(../images/plan-img-2.png);
+    right: -70px;
+    left: auto;
+    height: 194px;
+    width: 400px;
+    background-repeat: no-repeat;
+    top: 22px;
+}
+
+.membership-top-section li:first-child {
+    left: -50px;
+    position: relative;
+}
+
+.membership-top-section li:last-child {
+    right: -50px;
+    position: relative;
+}
+
+.membership-top-section span {
+    margin: 20px 0px 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.membership-top-section li {
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-membership-section .plan-section {
+    width: 33.33%;
+    padding: 38px;
+    position: relative;
+}
+
+.main-membership-section .inner-membership-section {
+    background: linear-gradient(107.95deg, rgba(195, 155, 134, 0.4) 2.5%, rgba(195, 155, 134, 0.1) 99.13%);
+    border: 2px solid #C39B86;
+    backdrop-filter: blur(6px);
+    border-radius: 22px 22px 0px 0px;
+}
+
+.main-membership-section .plan-section:nth-child(2) {
+    border: 1px solid #C39B86;
+}
+
+.main-membership-section .button-section {
+    justify-content: center;
+}
+
+.main-membership-section .button-section a {
+    background: #201A15;
+    border-radius: 8px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+    transition: 0.5s all;
+}
+
+.main-membership-section .button-section a:hover {
+    background: #FF385C;
+}
+
+.main-membership-section .content-section .discount {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-decoration-line: line-through;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.main-membership-section .content-section h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+
+.main-membership-section .month {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 54px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    padding-top: 24px;
+    margin-top: 34px;
+}
+
+.main-membership-section h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.main-membership-section .content-section {
+    text-align: center;
+}
+
+.main-membership-section .content-top-section {
+    text-align: left;
+    max-width: 500px;
+    display: inline-block;
+    margin: 0px auto;
+}
+
+.main-membership-section .main-discount {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 116.18%;
+    text-align: center;
+    color: #FF385C;
+    width: 70px;
+    height: 87px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    right: 30px;
+    padding: 20px;
+}
+
+.main-membership-section .main-discount:after {
+    content: '';
+    background-image: url(../images/plan-img.png);
+    height: 87px;
+    top: 0px;
+    position: absolute;
+    width: 70px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: -1;
+}
+
+.membership-top-section span {
+    max-width: 120px;
+}
+
+@media only screen and (max-width: 991px) {
+    .main-membership-section h2 {
+        margin-bottom: 50px;
+        margin-top: 60px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-membership-section .plan-section {
+        width: 100%;
+    }
+    .membership-section .main-membership-top-section::after,
+    .membership-section .main-membership-top-section::before {
+        display: none;
+    }
+    .membership-top-section li:first-child {
+        left: 0px;
+    }
+    .membership-top-section li:last-child {
+        right: 0px;
+    }
+    .membership-section .membership-top-section {
+        margin: 0px 0px 50px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .membership-top-section li {
+      padding: 0px 10px;
+    }
+    .main-membership-section h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .membership-top-section span {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .main-membership-section .plan-section {
+        padding: 38px 20px;
+    }
 }
 /* end membership.css */
+
+/* Explore-Makeup.css */
+.main-explore-makeup-artists .wrapper-main-artists-slider {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -27px;
+}
+.main-explore-makeup-artists .wrapper-main-artists-slider .slider-item {
+   width: 33.33%;
+   margin-bottom: 20px;
+}
+
+.main-explore-makeup-artists .artists-section-inner {
+    padding: 0px;
+}
+
+.explore-artists-section {
+    background: transparent;
+    padding: 20px 0px;
+}
+
+.main-explore-makeup-artists .col-3 {
+    width: 30%;
+    padding-right: 20px;
+    border-right: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+.main-explore-makeup-artists .col-wrapper {
+    padding-left: 30px;
+}
+
+.main-explore-makeup-artists .col-9 {
+    width: 70%;
+}
+
+.main-explore-makeup-artists .list-top-section {
+    display: flex;
+    list-style: none;
+}
+
+.main-explore-makeup-artists .list-top-section li {
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 14px 20px;
+    margin-right: 34px;
+}
+
+.main-explore-makeup-artists .list-top-section li:last-child {
+    margin-right: 0px;
+}
+
+.main-explore-makeup-artists .list-top-section li span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #9E9E9E;
+    margin-left: 15px;
+}
+
+.main-explore-makeup-artists h2 {
+    background: linear-gradient(90.14deg, #FF385C 0.13%, rgba(255, 56, 92, 0) 109.96%);
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 19px 22px;
+    margin-bottom: 53px;
+}
+
+.main-explore-makeup-artists .filter-section .heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-explore-makeup-artists .filter-section .heading-section h3:after {
+    content: "\276f";
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    transition: all .35s;
+    line-height: 13px;
+    transform: rotate(-90deg);
+    right: -1px;
+    left: auto;
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    color: #9E9E9E;
+}
+
+.main-explore-makeup-artists .heading-section.active h3:after {
+    transform: rotate(90deg);
+}
+
+.main-explore-makeup-artists .filter-section .heading-section h3 {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+}
+
+.main-explore-makeup-artists .filter-section .heading-section span {
+    margin-left: 20px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #9E9E9E;
+}
+
+.filter-section .content-section .input-field-checkbox.checkbox-input {
+    background: transparent;
+    border: none;
+    padding: 18px 20px;
+    margin: 0px;
+}
+
+.filter-section .input-field-checkbox.checkbox-input label {
+    margin: 0px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: capitalize;
+    color: #9E9E9E;
+    cursor: pointer;
+}
+
+.filter-section .input-field-checkbox.checkbox-input input[type=checkbox] + label:after {
+    border: 1px solid #9E9E9E;
+    margin: 0px;
+}
+
+.filter-section .input-field-checkbox.checkbox-input input[type=checkbox]:checked + label:after {
+    border: 1px solid #FF385C;
+}
+
+.filter-section .content-section {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.filter-section .only-one-item .input-field-checkbox.checkbox-input {
+    background: none;
+    padding: 20px;
+    border: none;
+    margin: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.price-range-slider { 
+    width:100%;
+    float:left;
+    padding:10px 20px;
+}
+
+.price-range-slider .range-value {
+    margin:0;
+}
+
+.price-range-slider .range-value input {
+    width:100%;
+    background:none;
+    color: #000;
+    font-size: 16px;
+    font-weight: initial;
+    box-shadow: none;
+    border: none;
+    margin: 0px 0px 10px;
+}
+
+.range-bar {
+    border: none;
+    height: 10px;
+    width: 96%;
+    margin-left: 8px;
+    background: #EFEFEF;
+    border-radius: 25px;
+}
+
+.ui-slider-range {
+    background:#06b9c0;
+}
+
+.ui-slider-handle {
+    border:none;
+    border-radius:25px;
+    background:#fff;
+    border:2px solid #FF385C;
+    height:17px;
+    width:17px;
+    top: -3px;
+    cursor:pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.ui-slider {
+    position: relative;
+    text-align: left;
+}
+
+.ui-slider-handle + span {
+    background:#FF385C;
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+    left: 17px !important;
+    border-radius: 25px;
+}
+
+.price-range-slider .range-bar .ui-slider-range {
+    background: #FF385C;
+}
+
+.filter-item .review-section {
+    margin-top: 20px;
+    border: none;
+}
+
+.filter-item .review-section .input-field-checkbox.checkbox-input{
+    padding: 6px 20px;
+}
+
+.main-explore-makeup-artists {
+    margin-bottom: 80px;
+}
+
+.explore-banner .banner-title {
+    font-family: 'Praysire';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-explore-makeup-artists .list-top-section li {
+        margin-right: 12px;
+        padding: 10px 8px;
+    }
+    .main-explore-makeup-artists .list-top-section li span {
+        font-size: 15px;
+        line-height: 27px;
+    }
+    .main-explore-makeup-artists h2 {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .main-explore-makeup-artists .col-3, .main-explore-makeup-artists .col-9 {
+        width: 100%;
+        padding: 0px;
+        border: none;
+    }
+    .main-explore-makeup-artists .filter-section {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main-explore-makeup-artists .wrapper-main-artists-slider {
+        margin: 0px -15px;
+    }
+    .main-explore-makeup-artists .wrapper-main-artists-slider .slider-item {
+        width: 50%;
+    }
+    .main-explore-makeup-artists .list-top-section li span {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .main-explore-makeup-artists .list-top-section {
+        flex-wrap: wrap;
+    }
+    .main-explore-makeup-artists .list-top-section li {
+        margin-bottom: 12px;
+    }
+    .main-explore-makeup-artists .col-wrapper {
+        padding-left: 0px;
+    }
+    .explore-banner .banner-title {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-explore-makeup-artists .filter-section .heading-section {
+        padding: 28px 0px;
+    }
+    .price-range-slider {
+        padding: 10px 0px;
+    }
+    .filter-section .content-section .input-field-checkbox.checkbox-input {
+        padding: 10px 0px;
+    }
+    .filter-section .only-one-item .input-field-checkbox.checkbox-input {
+        padding: 20px 0px;
+    }
+    .filter-section .input-field-checkbox.checkbox-input label {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .main-explore-makeup-artists .list-top-section li span {
+        margin-left: 5px;
+    }
+    .main-explore-makeup-artists .list-top-section li {
+        margin-right: 6px;
+    }
+    .main-explore-makeup-artists .wrapper-main-artists-slider .slider-item {
+        width: 100%;
+    }
+    .main-explore-makeup-artists h2 {
+        margin-bottom: 0px;
+    }
+    .main-explore-makeup-artists {
+        margin-bottom: 30px;
+    }
+}
+
+/* End Explore-Makeup.css */
+
+/* portfolio.css */
+
+.portfolio-section .file-uploder{
+    border: 2px dotted #000000;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.portfolio-section .file-uploder .file-upload-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.portfolio-section .file-uploder .img-upload-text{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.portfolio-inner-section .sub-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #212121;
+}
+
+.portfolio-section .sub-img-title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #929292;
+    margin-bottom: 24px;
+}
+
+.portfolio-section .sub-img-title span {
+    display: block; 
+    color: #FF385C;
+}
+
+.portfolio-section .image-thumb {
+    width: 116px;
+    height: 116px;
+    background: #EEEEEE;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-right: 24px;
+    position: relative;
+}
+
+.portfolio-section .image-thumb svg { 
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.portfolio-section .video-section {
+    margin-top: 50px;
+}
+
+.portfolio-inner-section {
+    margin-bottom: 42px;
+}
+
+.portfolio-section .image-thumb span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #202738;
+}
+
+.portfolio-section .text-image-tumb {
+    border: 1px solid rgba(50, 50, 50, 0.2);
+    border-radius: 15px;
+    background: transparent;
+}
+
+.portfolio-section .sub-title span {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #929292;
+    margin-left: 5px;
+}
+
+.portfolio-section .col-6 .image-section {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 140px;
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio-section .col-6 .image-section {
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .portfolio-section .image-thumb {
+        width: 20%;
+        height: auto;
+        margin-right: 18px;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .portfolio-section .image-thumb:last-child {
+        margin-right: 0px;
+    }
+}
+
+/* End portfolio.css */
+
+/* user-login.css */
+.main-user-login-section .col-6:first-child {
+    background: #FCF8F3;
+    text-align: center;
+    padding: 40px;
+}
+
+.main-user-login-section {
+    position: relative;
+    margin: 80px 0px;
+}
+/* End user-login.css */

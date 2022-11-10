@@ -21,6 +21,17 @@ $(document).ready(function(){
       $('.image-model').removeClass('opened');
       $('body').removeClass('opened-drawer');
   });
+  
+  $(document).on('click', '.filter-section .heading-section', function() {
+    var selected = $(this).next('.content-section');
+    if (selected.is(':hidden')) {
+      $(this).next('.content-section').slideDown('fast');
+      $(this).toggleClass('active');
+    } else {
+      $(this).next('.content-section').slideUp('fast');
+      $(this).toggleClass('active');
+    }
+  });
 
     var heroSlider = new Swiper(".main-hero-slider", {
         loop: true,
@@ -115,4 +126,18 @@ $(document).ready(function(){
         $(this).parent().toggleClass('top-click').parents().siblings().children().removeClass('top-click');
       });
 
+});
+
+$(function() {
+  $( "#slider-range" ).slider({
+    range: true,
+    min: 130,
+    max: 500,
+    values: [ 130, 250 ],
+    slide: function( event, ui ) {
+    $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+    }
+  });
+  $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+    " - $" + $( "#slider-range" ).slider( "values", 1 ) );
 });

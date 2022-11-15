@@ -3844,10 +3844,128 @@ input[type=checkbox] + label:before {
     background: #FCF8F3;
     text-align: center;
     padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 800px;
+}
+
+.main-user-login-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ffffff;
+}
+
+.login-page {
+    background: #F5F5F5;
 }
 
 .main-user-login-section {
     position: relative;
     margin: 80px 0px;
+}
+
+.main-user-login-section .login-section {
+    text-align: center;
+    padding: 60px;
+}
+
+.main-user-login-section .login-section {
+    text-align: center;
+    padding: 70px;
+}
+
+.main-user-login-section .login-section h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #424242;
+    margin-bottom: 60px;
+}
+
+.main-user-login-section .login-button {
+    width: 100%;
+    padding: 10px;
+    color: #1A1A1A;
+    background: rgba(196, 196, 196, 0.4);
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 54px;
+}
+
+.main-user-login-section .login-form-section .or {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    color: #1A1A1A;
+    margin-bottom: 54px;
+}
+
+.main-user-login-section .sign-up-button {
+    border: 1px solid #FF385C;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1A1A1A;
+    background: transparent;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-user-login-section .sign-up-button svg {
+    margin-right: 20px;
+}
+
+.main-user-login-section .login-button-line {
+    margin-top: 34px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #1A1A1A;
+    cursor: pointer;
+}
+
+.main-user-login-section .login-button-line a {
+    color: #FF385D;
+    margin-left: 8px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.main-user-login-section .title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #424242;
+    margin-bottom: 30px;
+}
+
+.main-user-login-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* End user-login.css */
